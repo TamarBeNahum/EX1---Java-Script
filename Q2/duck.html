@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Duck </title>
+    <!--bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link href="styleSheetFormDuck.css" rel="stylesheet" />
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script src="duck.js" defer></script>
+
+</head>
+<body>
+    <audio id="quackAudio">
+        <source src="quack_sound.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <div class="container">    
+        <div class="row center_txt_div">
+            <div class="col">
+                <form id="mainForm">
+                    <div class="form-group">
+                        <label for="name"> Name </label>
+                        <input type="text" id="nameInput" placeholder="Enter the duck name" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="color"> Color </label>
+                        <input type="text" id="colorInput" placeholder="Enter the duck color" required
+                               pattern="^[a-zA-Zא-ת\s]+$"
+                               oninvalid="this.setCustomValidity('Country must contain letters and spaces only')"
+                               oninput="this.setCustomValidity('')" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age"> age </label>
+                        <input type="text" id="ageInput" placeholder="Enter the duck age" required
+                               pattern="^[0-9]+$"
+                               oninvalid="this.setCustomValidity('enter numbers only')"
+                               oninput="this.setCustomValidity('')" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight"> Weight </label>
+                        <input type="text" id="weightInput" placeholder="Enter the duck weight" required
+                               pattern="^[0-9]+$"
+                               oninvalid="this.setCustomValidity('enter numbers only')"
+                               oninput="this.setCustomValidity('')" />
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <label for="image"> Image </label>
+                        <input type="file" id="imageInput" accept="image/*" onchange="ImageUpload(event)" required>                     
+                    </div>
+
+                    <input type="submit" value="Create duck" id="submit" /> &nbsp;&nbsp;
+                    <input type="button" value="Show" id="showDuckBtn" style="visibility:hidden"/> &nbsp;&nbsp;
+                    <input type="button" value="Quack" id="quackBtn" style="visibility:hidden"/>
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

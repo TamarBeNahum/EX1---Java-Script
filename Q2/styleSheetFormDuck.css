@@ -1,0 +1,71 @@
+
+img{
+    height: 500px;
+}
+
+.center_txt_div {
+    text-align: center;
+}
+
+#mainForm {
+    text-align: left;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffe9ec;
+    box-shadow: 0 0 6px white;
+    background-color: #FAF9F6;
+}
+
+
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+    width: 100%;
+}
+.submit_div {
+    display: flex;
+    align-items:center;
+}
+
+#menuBtn {
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 2.5px solid #FF5A5F;
+    box-shadow: 0 5px 4px #FEE0E0;
+    transition: background-color 0.4s ease;
+}
+
+#submit , #showDuckBtn , #quackBtn{
+    background: #FF5A5F;
+    border: 1px solid #FF4742;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;   
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-weight: 800;
+    line-height: 16px;
+    padding: 12px 14px;
+    transition: background-color 0.4s ease;
+}
+
+#submit:hover,
+#submit:active,
+#showDuckBtn:hover,
+#showDuckBtn:active ,
+#quackBtn:hover,
+#quackBtn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
