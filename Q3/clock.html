@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="clock.js" defer></script>
+
+    <title>Clock</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link href="styleSheetClock.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>Clock Form</h1>
+
+    <div class="container">
+
+        <form id="clockForm">
+
+            <div class="form-group">
+
+                <label for="hours">Hours:</label>
+
+                <input type="text" id="hours"/>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="minutes">Minutes:</label>
+
+                <input type="text" id="minutes">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="seconds">Seconds:</label>
+
+                <input type="text" id="seconds">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="country">Country:</label>
+
+                <input type="text" id="country">
+
+            </div>
+
+            <input type="submit" class="btnManage" onclick="addClock()" value="Add Clock">
+
+        </form>
+
+    </div>
+
+    <div id="clockList"></div>
+
+   
+
+</body>
+
+</html>

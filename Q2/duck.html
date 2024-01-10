@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title> Duck </title>
@@ -20,55 +21,64 @@
     <script src="duck.js" defer></script>
 
 </head>
+
 <body>
     <audio id="quackAudio">
         <source src="quack_sound.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
 
-    <div class="container">    
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 10px;"> Duck page </h1>
         <div class="row center_txt_div">
             <div class="col">
                 <form id="mainForm">
                     <div class="form-group">
                         <label for="name"> Name </label>
-                        <input type="text" id="nameInput" placeholder="Enter the duck name" required/>
+                        <input type="text" id="nameInput" placeholder="Enter the duck name" required />
                     </div>
 
                     <div class="form-group">
                         <label for="color"> Color </label>
                         <input type="text" id="colorInput" placeholder="Enter the duck color" required
-                               pattern="^[a-zA-Zא-ת\s]+$"
-                               oninvalid="this.setCustomValidity('Country must contain letters and spaces only')"
-                               oninput="this.setCustomValidity('')" />
+                            pattern="^[a-zA-Zא-ת\s]+$"
+                            oninvalid="this.setCustomValidity('Country must contain letters and spaces only')"
+                            oninput="this.setCustomValidity('')" />
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="age"> age </label>
-                        <input type="text" id="ageInput" placeholder="Enter the duck age" required
-                               pattern="^[0-9]+$"
-                               oninvalid="this.setCustomValidity('enter numbers only')"
-                               oninput="this.setCustomValidity('')" />
+                        <input type="text" id="ageInput" placeholder="Enter the duck age" required pattern="^[0-9]+$"
+                            oninvalid="this.setCustomValidity('enter numbers only')"
+                            oninput="this.setCustomValidity('')" />
                     </div>
 
                     <div class="form-group">
                         <label for="weight"> Weight </label>
                         <input type="text" id="weightInput" placeholder="Enter the duck weight" required
-                               pattern="^[0-9]+$"
-                               oninvalid="this.setCustomValidity('enter numbers only')"
-                               oninput="this.setCustomValidity('')" />
+                            pattern="^[0-9]+$" oninvalid="this.setCustomValidity('enter numbers only')"
+                            oninput="this.setCustomValidity('')" />
                     </div>
 
-                   
+
 
                     <div class="form-group">
                         <label for="image"> Image </label>
-                        <input type="file" id="imageInput" accept="image/*" onchange="ImageUpload(event)" required>                     
+                        <div class="file-input-wrapper">
+                            <input type="file" id="imageInput" accept="image/*" onchange="ImageUpload(event)" required>
+                        </div>
+
+
                     </div>
 
-                    <input type="submit" value="Create duck" id="submit" /> &nbsp;&nbsp;
-                    <input type="button" value="Show" id="showDuckBtn" style="visibility:hidden"/> &nbsp;&nbsp;
-                    <input type="button" value="Quack" id="quackBtn" style="visibility:hidden"/>
+                    <div class="form-group">
+                        <input type="submit" value="Create duck" id="submit" /> &nbsp;&nbsp;
+                        <input type="button" value="Show" id="showDuckBtn" style="visibility:hidden" /> &nbsp;&nbsp;
+                        <input type="button" value="Quack" id="quackBtn" style="visibility:hidden" />
+
+                    </div>
+
+
                 </form>
 
             </div>
@@ -78,4 +88,5 @@
     </div>
 
 </body>
+
 </html>

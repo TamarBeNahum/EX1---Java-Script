@@ -81,6 +81,7 @@ function submitToTheServer() {
 
     //create the duck
     creatDuck();
+    $('#mainForm')[0].reset();
     return false;
 }
 

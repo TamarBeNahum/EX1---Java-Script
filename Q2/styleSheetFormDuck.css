@@ -8,7 +8,7 @@ img{
 }
 
 #mainForm {
-    text-align: left;
+    text-align: center;
     margin-top: 37px;
     margin-bottom: 37px;
     padding: 20px;
@@ -24,10 +24,12 @@ label {
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700;
+    font-size: 20px;
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
-    width: 100%;
+    width: 28%;
+    height: 50px;
 }
 .submit_div {
     display: flex;
@@ -69,3 +71,14 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     background-position: 0 0;
     color: #FF4742;
 }
+
+
+.file-input-wrapper {
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 6px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
